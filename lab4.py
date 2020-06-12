@@ -129,7 +129,8 @@ if Gp < Gt:
         else:
             print(f"t{i} > ttabl, b{i} значимий")
 
-    print(d_, " значимих коефіцієнтів")
+    print("\nКількість значимих коефіцієнтів:", d_)
+    print("Кількість не значимих коефіцієнтів:", 8 - d_)
 
     yy1 = b[0] + b[1] * x1min + b[2] * x2min + b[3] * x3min + b[4] * x1min * x2min + b[5] * x1min * x3min + b[6] * x2min * x3min + b[7] * x1min * x2min * x3min
     yy2 = b[0] + b[1] * x1min + b[2] * x2min + b[3] * x3max + b[4] * x1min * x2min + b[5] * x1min * x3max + b[6] * x2min * x3max + b[7] * x1min * x2min * x3max
